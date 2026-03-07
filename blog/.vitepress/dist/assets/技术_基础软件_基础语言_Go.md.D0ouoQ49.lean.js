@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as o}from"./chunks/framework.571fwNe4.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"技术/基础软件/基础语言/Go.md","filePath":"技术/基础软件/基础语言/Go.md"}'),a={name:"技术/基础软件/基础语言/Go.md"};function r(s,c,n,p,_,d){return t(),o("div")}const f=e(a,[["render",r]]);export{m as __pageData,f as default};

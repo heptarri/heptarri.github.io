@@ -13,7 +13,7 @@ export default defineConfig({
         ],
 
         sidebar: generateSidebar({
-            documentRootPath: 'blog/技术', // 你的文档根目录
+            documentRootPath: 'blog', // 你的文档根目录
             collapsed: true,         // 是否默认折叠
             capitalizeFirst: true,    // 首字母大写
             useTitleFromFrontmatter: true, // 优先使用 md 里的 title 字段
@@ -24,13 +24,13 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+            { icon: 'github', link: 'https://github.com/heptarri' }
         ],
 
         logo: "/archlinux.svg",
 
         footer: {
-            message: "Released under MIT License.",
+            message: "Released under MIT License",
             copyright: "Copyright (c) 2017-2026 Heptari"
         }
     },
