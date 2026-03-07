@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Heptari's Inn"
-  text: "Development Documents of Heptari"
+  text: "Develop Documents and Articles"
   tagline: Just do what I love.
   image: 
     src: /archlinux.svg

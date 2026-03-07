@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,ak as i}from"./chunks/framework.DXL0ymeD.js";const _=JSON.parse('{"title":"首页","description":"","frontmatter":{"layout":"doc"},"headers":[],"relativePath":"base.md","filePath":"base.md"}'),n={name:"base.md"};function p(r,a,l,o,c,d){return t(),s("div",null,[...a[0]||(a[0]=[i("",5)])])}const b=e(n,[["render",p]]);export{_ as __pageData,b as default};
