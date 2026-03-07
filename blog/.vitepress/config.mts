@@ -1,28 +1,42 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Heptari's Inn",
-  description: "Development Documents of Heptari",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    title: "Heptari's Inn",
+    description: "Development Documents of Heptari",
+    themeConfig: {
+        // https://vitepress.dev/reference/default-theme-config
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'About', link: '/about' }
+        ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-    ],
+        sidebar: generateSidebar({
+            documentRootPath: 'blog/技术', // 你的文档根目录
+            collapsed: true,         // 是否默认折叠
+            capitalizeFirst: true,    // 首字母大写
+            useTitleFromFrontmatter: true, // 优先使用 md 里的 title 字段
+        }),
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+        search: {
+            provider: 'local'
+        },
+
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+        ],
+
+        logo: "/archlinux.svg",
+
+        footer: {
+            message: "Released under MIT License.",
+            copyright: "Copyright (c) 2017-2026 Heptari"
+        }
+    },
+
+    vite: {
+        assetsInclude: ['**/*.zip'], // 显式告知 Vite 将 .zip 视为静态资源
+    },
+    ignoreDeadLinks: true,
 })

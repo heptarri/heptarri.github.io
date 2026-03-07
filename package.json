@@ -1,10 +1,14 @@
 {
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.16"
+    "vitepress": "^2.0.0-alpha.16",
+    "vitepress-theme-teek": "^1.5.5"
   },
   "scripts": {
     "docs:dev": "vitepress dev blog",
     "docs:build": "vitepress build blog",
     "docs:preview": "vitepress preview blog"
+  },
+  "dependencies": {
+    "vitepress-sidebar": "^1.33.1"
   }
 }
