@@ -17,7 +17,7 @@
 
 定义引脚的功能有三种方式，B、C 两种在此不再赘述，用 UM 中的描述代之：
 
-![](attachments/Pasted%20image%2020260124171557.png)
+![](assets/Pasted%20image%2020260124171557.png)
 
 需要注意的是，为了调试， JTAG 相关的引脚需要被设定为 UnTouchedPortPin。EB tresos Studio 29 在 新建项目时提供了相关的模板，可以预先完成此项设置。
 

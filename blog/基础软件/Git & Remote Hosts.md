@@ -32,7 +32,7 @@ $ git config --global user.email "heptari@outlook.com"
 
 ## 工作区与暂存区
 
-![img](attachments/Pasted%20image%2020260125164614.png)
+![img](assets/Pasted%20image%2020260125164614.png)
 
 Git 将经 Git 托管的本地文件分为工作区和版本库。其中工作区即在文件目录中看到的经托管的主体内容，版本库则是主要存在于 `.git` 文件夹的部分。
 
@@ -196,17 +196,17 @@ $ git remote rm origin
 
 一开始的时候，`master` 分支是一条线，Git用 `master` 指向最新的提交，再用 `HEAD` 指向 `master`，就能确定当前分支，以及当前分支的提交点。如图所示。
 
-![](attachments/Pasted%20image%2020260125182342.png)
+![](assets/Pasted%20image%2020260125182342.png)
 
 每次提交，`master` 分支都会向前移动一步，这样，随着你不断提交，`master` 分支的线也越来越长。
 
 当我们创建新的分支，例如 `dev` 时，Git新建了一个指针叫 `dev`，指向 `master` 相同的提交，再把 `HEAD` 指向 `dev`，就表示当前分支在 `dev` 上：
 
-![](attachments/Pasted%20image%2020260125182424.png)
+![](assets/Pasted%20image%2020260125182424.png)
 
 由于当前 `HEAD` 指针指向 `dev` 分支，所以当前对工作区的所有修改和提交就是针对 `dev` 分支。比如新提交一次后，`dev` 指针往前移动一步，而 `master` 指针不变：
 
-![](attachments/Pasted%20image%2020260125182558.png)
+![](assets/Pasted%20image%2020260125182558.png)
 
 当我们想将 `dev` 分支合并到 `master` 分支，就相当于把 `master` 指向 `dev` 的当前提交。
 
@@ -259,7 +259,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 
 当在 `master` 进行别的修改并 `git commit` 后，其结构变成了：
 
-![](attachments/Pasted%20image%2020260125183623.png)
+![](assets/Pasted%20image%2020260125183623.png)
 
 这种情况下，Git无法执行“快速合并”，只能试图把各自的修改合并起来，但这种合并就会产生冲突：
 
@@ -313,7 +313,7 @@ $ git commit -m "conflict fixed"
 ```
 
 现在，分支结构变成了：
-![](attachments/Pasted%20image%2020260125183857.png)
+![](assets/Pasted%20image%2020260125183857.png)
 
 Git 提供了 `git log` 工具揭示这种结构：
 

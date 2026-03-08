@@ -4,31 +4,31 @@ Pwm 的基础配置与前几个相同，故不再赘述。
 
 在 PwmConfigurationOfOptApiServices 中添加所需要的 Api：
 
-![](attachments/Pasted%20image%2020260124171935.png)
+![](assets/Pasted%20image%2020260124171935.png)
 
 进入 PwmFtm 页 -> PwmFtmCh 页，添加一个 Ftm 时钟通道（FTM是灵活定时器模块）。
 
 在该通道中进行对应选择：
 
-![](attachments/Pasted%20image%2020260124171940.png)
+![](assets/Pasted%20image%2020260124171940.png)
 
 在 Ftm Sync 页面中进行配置：
 
-![](attachments/Pasted%20image%2020260124171947.png)
+![](assets/Pasted%20image%2020260124171947.png)
 
 在 Ftm Modules 中配置：
 
-![](attachments/Pasted%20image%2020260124171952.png)
+![](assets/Pasted%20image%2020260124171952.png)
 
 回到上级页面，添加一个 Pwm 通道，进行如下配置：
 
-![](attachments/Pasted%20image%2020260124171958.png)
+![](assets/Pasted%20image%2020260124171958.png)
 
 该 Pwm 通道将通过 FTM_0_CH_0 端口输出 Pwm 波。
 
 同之前的模块相同，需要在 Port 中进行相应设置：
 
-![](attachments/Pasted%20image%2020260124172010.png)
+![](assets/Pasted%20image%2020260124172010.png)
 
 同样的，需要在 Mcu 中将 FTM0 的时钟设置为 SPLL，并设置时钟参考点为 RUN_SYS_CLK。
 

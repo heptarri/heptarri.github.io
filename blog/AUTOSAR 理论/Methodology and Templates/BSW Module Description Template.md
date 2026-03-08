@@ -23,7 +23,7 @@ BSWMDT 可以用于：
 
 整个 BSWMDT 由三层架构实现。
 
-![](attachments/Pasted%20image%2020260123215232.png)
+![](assets/Pasted%20image%2020260123215232.png)
 
 ### BswModuleDescription
 
@@ -57,7 +57,7 @@ BSWMDT 可以用于：
 
 ## BSW Module Description 顶层 概览
 
-![](attachments/Pasted%20image%2020260123221855.png)
+![](assets/Pasted%20image%2020260123221855.png)
 
 该图展示了针对顶层 BswModuleDescription 的连接关系。
 
@@ -71,7 +71,7 @@ BSWMDT 可以用于：
 
 如 BswModuleEntry：
 
-![](attachments/Pasted%20image%2020260123224703.png)
+![](assets/Pasted%20image%2020260123224703.png)
 
 接下来用例子说明 BSWMDT 中该内容是如何落实的。
 
@@ -133,7 +133,7 @@ SchM 模块作为使用者（Usage），根据 [TPS_BSWMDT_04513]，应当有：
 
 对于标准 [TPS_BSWMDT_04310]，即当 BswModuleEntry 被引用或者 SHORT-NAME 相同时，可以认为是匹配（matching）的。其 SHORT-NAME 均为 Can_MainFunction_Write ，故匹配。
 
-![](attachments/Pasted%20image%2020260123225914.png)
+![](assets/Pasted%20image%2020260123225914.png)
 
 对于 [constr_4093]，即签名一致性校验，可以认为是其匹配的类型约束：即当两者均为返回类型或返回类型（参数）相同或其 SwServiceArgs 返回的类型相同时，认为是匹配（matching）的。
 
@@ -147,11 +147,11 @@ SchM 模块作为使用者（Usage），根据 [TPS_BSWMDT_04513]，应当有：
 
 该部分描述了针对单一 BSW Module 的接口形态。
 
-![](attachments/Pasted%20image%2020260123231618.png)
+![](assets/Pasted%20image%2020260123231618.png)
 
 上图体现了对于 BswModuleEntry 模块的接口形态设定。
 
-![](attachments/Pasted%20image%2020260123231833.png)
+![](assets/Pasted%20image%2020260123231833.png)
 
 该表描述了上图中的部分属性及其类型、数量。BSW 上层厂商可以根据这些信息编写配置软件以使其能够生成符合 AUTOSAR 规范的 XML 文件。如：
 
@@ -242,11 +242,11 @@ void CanIf_Write(uint32 CanId, uint8 CanData[8])
 
 与顶层相同，中间层也有类似的架构图：
 
-![](attachments/Pasted%20image%2020260123232611.png)
+![](assets/Pasted%20image%2020260123232611.png)
 
 同样提供了某些属性：
 
-![](attachments/Pasted%20image%2020260123232634.png)
+![](assets/Pasted%20image%2020260123232634.png)
 
 这些属性以同样的方式被生成于 XML 中，组成中间层的描述，即包含了模块内部基本活动的描述。
 
@@ -254,7 +254,7 @@ void CanIf_Write(uint32 CanId, uint8 CanData[8])
 
 该层描述了 BSW 软件的实现细节标准。
 
-![](attachments/Pasted%20image%2020260123233319.png)
+![](assets/Pasted%20image%2020260123233319.png)
 
 ## Three Layer Approach 举例说明
 

@@ -9,7 +9,7 @@ page_cover_height: 300
 # 关于 Heptari
 
 
-![Self photo](<attachments/self.jpg>)
+![Self photo](<assets/self.jpg>)
 
 Heptari，山东人，目前就读于长安大学机器人工程系。有嵌入式软/硬件开发经验，熟悉前/后端技术栈，熟悉 Linux 自动驾驶技术栈，熟悉 MATLAB/Simulink 控制仿真建模。熟悉 AUTOSAR 标准和 Vector 工具链及 ASPICE 4.0 开发流程。爱好函数式编程。
 

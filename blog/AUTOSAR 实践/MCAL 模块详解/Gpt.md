@@ -20,17 +20,17 @@
 
 在 GptHwConfiguration 页建立 GptHwConfiguration_0，即 LPIT_0_CH_0，开启 GptIsrEnable 和 GptChannelIsUsed 选项。此时注意把所有的ISR端口加进去（也可以直接点右上角的小人叫Add required elements），不然会出现报错，如下图所示。
 
-![](attachments/Pasted%20image%2020260124171913.png)
+![](assets/Pasted%20image%2020260124171913.png)
 
 在 ClockReferencePoint 中添加 Point 为 McuClockReferencePoint_LPIT 为 LPIT0_CLK，如下所示。
 
-![](attachments/Pasted%20image%2020260124171919.png)
+![](assets/Pasted%20image%2020260124171919.png)
 
 在 GptLpit 中添加一项，进入后 添加 GptLpitChannels 一项，选择 LPit Channel 为刚才开启的 LPIT_0_CH_0。
 
 在 GptChannelConfiguration 中新建一项并进入。配置如下图所示。
 
-![](attachments/Pasted%20image%2020260124171923.png)
+![](assets/Pasted%20image%2020260124171923.png)
 
 其中时钟参考点同 Uart 配置中所示。
 

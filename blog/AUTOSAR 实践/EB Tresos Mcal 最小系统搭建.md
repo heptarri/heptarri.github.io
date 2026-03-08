@@ -12,18 +12,18 @@
 
 在 S32 Design Studio 中，点击 File -> New -> S32DS Application Project，选择 Processor -> Family -> S32K1xx -> S32K116 ，右侧选择 NXP GCC 6.3 for Arm 32-bit Bare-Matel，单击 Next。
 
-![](attachments/Pasted%20image%2020260122205211%201.png)
+![](assets/Pasted%20image%2020260122205211%201.png)
 
 在如图所示位置选择 SDK（由于我们使用 EB Tresos 作为 Mcal 配置工具，所以SDKs 可以留空）。
 
-![](attachments/Pasted%20image%2020260123155844.png)
-![](attachments/Pasted%20image%2020260123155856.png)
+![](assets/Pasted%20image%2020260123155844.png)
+![](assets/Pasted%20image%2020260123155856.png)
 
 单击 Finish 后等待项目加载完成，点击 Dashboard 中的 Build，发现 Console 中显示正确显示生成 .elf 文件说明创建成功。
 
 ### EB Tresos Studio 部分
 
-![](attachments/Pasted%20image%2020260123155926.png)
+![](assets/Pasted%20image%2020260123155926.png)
 
 新建项目，同上
 
@@ -238,7 +238,7 @@ Dio_WriteChannel(DioConf_DioChannel_LED_Toggle, STD_HIGH);
 
 前三行是 Mcu 初始化部分，其中 `McuClockSettingConfig_0` 和 `McuModeSettingConf_0` 与 在 EB tresos 中设置的名称保持一致（可以在 Mcu_Cfg.h 中查看)：
 
-![](attachments/Pasted%20image%2020260123155959.png)
+![](assets/Pasted%20image%2020260123155959.png)
 
 第五行是对 Port进行初始化。
 
@@ -288,8 +288,8 @@ C:/NXP/SW32K1_RTD_4.4_1.0.0_HF01/eclipse/plugins/Port_TS_T40D2M10I0R0/generate_P
 
 检查 S32DS 与 EB tresos 联合部分的 `Mcal_Plugins/Link_Source` 有没有配置好 Filter，即：
 
-![](attachments/Pasted%20image%2020260123160022.png)
-![](attachments/Pasted%20image%2020260123160028.png)
+![](assets/Pasted%20image%2020260123160022.png)
+![](assets/Pasted%20image%2020260123160028.png)
 
 
 1. Debug卡死，遇到报错：
