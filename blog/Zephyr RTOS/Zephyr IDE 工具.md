@@ -62,6 +62,48 @@ Zephyr 为众多 IDE 提供了辅助工具用于开发，其中在 Visual Studio
 
 修改其 `configFiles` 中 `"target/nrf52.cfg"` 为 `"target/stm32f4x.cfg"`。
 
+此时，`launch.json` 文件如下所示：
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Zephyr IDE: Debug",
+            "cwd": "${workspaceFolder}",
+            "gdbPath": "${command:zephyr-ide.get-gdb-path}",
+            "executable": "${command:zephyr-ide.get-zephyr-elf}",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "rtos": "Zephyr",
+            "searchDir": [],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "rtt_start_retry": 1000,
+                "decoders": [
+                    {
+                        "label": "RTT channel 0",
+                        "port": 0,
+                        "type": "console"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
 此时，在 Zephyr IDE 可以看到 Debug 行后面出现提示：`Zephyr IDE: Debug`。点击，进行调试。
 
 ![debug](<assets/Zephyr IDE 工具/image-5.png>)
