@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as a}from"./chunks/framework.DTkRX0Ot.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"基础软件/基础语言/Rust.md","filePath":"基础软件/基础语言/Rust.md"}'),s={name:"基础软件/基础语言/Rust.md"};function r(o,c,n,p,_,d){return e(),a("div")}const f=t(s,[["render",r]]);export{m as __pageData,f as default};

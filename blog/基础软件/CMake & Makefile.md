@@ -144,7 +144,7 @@ target_link_libraries(MyExecutable Boost::Boost)
 
 CMake 构建通常分为以下流程：
 
-![](/attachments/Pasted%20image%2020260126132526.png)
+![](attachments/Pasted%20image%2020260126132526.png)
 
 ### 创建构建目录
 
