@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o}from"./chunks/framework.Dru0zOzN.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"基础软件/基础语言/Python.md","filePath":"基础软件/基础语言/Python.md"}'),a={name:"基础软件/基础语言/Python.md"};function n(r,s,c,p,_,d){return e(),o("div")}const f=t(a,[["render",n]]);export{m as __pageData,f as default};
