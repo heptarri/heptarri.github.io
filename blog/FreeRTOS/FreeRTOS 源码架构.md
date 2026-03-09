@@ -2,8 +2,8 @@
 
 首先通过 Git clone FreeRTOS 源码开始：
 
-```c
-git clone <https://github.com/FreeRTOS/FreeRTOS.git>
+```bash
+git clone https://github.com/FreeRTOS/FreeRTOS.git
 ```
 
 可以发现，其源码可以分为三个主要部分：FreeRTOS、FreeRTOS-Plus 和 Tools。
@@ -30,9 +30,7 @@ FreeRTOS
 
 ## 可移植层 （Portable）
 
-为了支持不同的处理器架构，需要进行移植，即为 RTOS 可移植层，位于 Portable 文件夹中：
-
-![[Pasted image 20260122202254.png]]
+为了支持不同的处理器架构，需要进行移植，即为 RTOS 可移植层，位于 Portable 文件夹中。
 
 其结构为：portable/[compiler]/[architecture]
 
