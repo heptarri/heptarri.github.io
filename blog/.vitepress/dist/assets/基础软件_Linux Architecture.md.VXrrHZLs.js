@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./chunks/framework.DwgkYvd1.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"基础软件/Linux Architecture.md","filePath":"基础软件/Linux Architecture.md"}'),c={name:"基础软件/Linux Architecture.md"};function a(n,i,o,s,u,_){return t(),r("div")}const m=e(c,[["render",a]]);export{d as __pageData,m as default};
