@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./chunks/framework.Bj6Oe1e0.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"基础软件/基础语言/Typescript.md","filePath":"基础软件/基础语言/Typescript.md"}'),a={name:"基础软件/基础语言/Typescript.md"};function s(c,p,o,n,i,_){return t(),r("div")}const f=e(a,[["render",s]]);export{m as __pageData,f as default};
