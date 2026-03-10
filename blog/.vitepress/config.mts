@@ -8,8 +8,8 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'About', link: '/about' }
+            { text: '首页', link: '/' },
+            { text: '关于我', link: '/about' }
         ],
 
         sidebar: generateSidebar({
