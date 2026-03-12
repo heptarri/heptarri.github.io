@@ -93,8 +93,6 @@ ros2 launch zed_display_rviz2 display_zed_cam.launch.py camera_model:=zed2i
 
 在 `video`、`sensors` 等配置中，开启需要的选项。一个可能的配置文件附在文末。
 
-需要注意的是，`pos_tracking` 下的 `pos_tracking_enabled` 需要设置为 `false`，因为我们需要使用 RTAB-Map 自带的里程计。否则，会导致黑屏。
-
 ## 运行 RTAB-Map 
 
 输入以下内容，运行 RTAB-Map。
