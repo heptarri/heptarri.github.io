@@ -1,4 +1,4 @@
-# 利用 MuJoCO 仿真 ROS 控制 G1 机器人
+# 利用 MuJoCo 仿真 ROS 控制 G1 机器人
 
 在 [搭建了 Unitree-MuJoCo 仿真环境](./Unitree-MuJoCo%20仿真环境.md) 的基础上，我们可以编写 ROS 信息并桥接到 MuJoCo 中进行仿真。具体方法如下。
 
