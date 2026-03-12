@@ -85,3 +85,8 @@ python scripts/play.py Unitree-G1-Tracking --motion_file=src/assets/motions/g1/d
 ```
 
 其中具体的模型名称 `model_xx.pt` 及其路径需要根据情景进行修改。
+
+## 参考链接
+
+[Unitree RL mjLab](https://github.com/unitreerobotics/unitree_rl_mjlab)
+

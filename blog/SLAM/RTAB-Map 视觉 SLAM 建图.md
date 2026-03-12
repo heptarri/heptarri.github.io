@@ -27,20 +27,21 @@ https://www.stereolabs.com/en-sg/developers/release
 ## ROS 工作区设置
 
 ```bash
-mkdir -p ~/ros_ws/src
+mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 
 # 安装 ZED-ROS Wrapper 用于利用 ROS 与 ZED 摄像机外设通信
-git clone - recursive https://github.com/stereolabs/zed-ros2-wrapper.git
-cd zed-ros2-wrapper
-git checkout master
-
-# 构建 Wrapper
+git clone https://github.com/stereolabs/zed-ros2-wrapper.git
 cd ..
-source /opt/ros/${ROS_DISTRO}/setup.bash
-colcon build - symlink-install - cmake-args=-DCMAKE_BUILD_TYPE=Release
-source install/setup.bash
-echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+
+# 安装依赖及构建 Wrapper
+sudo apt update
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
+
+# 添加到环境变量
+echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
+source ~/.bashrc
 
 # 安装 RTAB-Map
 cd ~/zed_ws
@@ -48,7 +49,7 @@ sudo apt install ros-${ROS_DISTRO}-rtabmap-ros
 sudo apt install ros-${ROS_DISTRO}-rtabmap-viz
 
 rosdep update
-rosdep install - from-paths src - ignore-src -r -y
+rosdep install --from-paths src --ignore-src -r -y
 ```
 
 然后进行验证：
@@ -134,6 +135,12 @@ hep@hep-pc:~/ros2_ws$ ros2 topic list
 运行的效果如下：
 
 ![alt text](<assets/RTAB-Map 视觉 SLAM 建图/image.png>)
+
+## 参考链接
+
+[SteroLabs - ROS2](https://www.stereolabs.com/docs/ros2)
+
+[RTAB-Map - GitHub](https://github.com/introlab/rtabmap)
 
 ## 配置文件
 
