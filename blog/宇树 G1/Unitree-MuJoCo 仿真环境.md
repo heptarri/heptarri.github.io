@@ -88,7 +88,7 @@ export CYCLONEDDS_URI='<CycloneDDS><Domain><Iceoryx><Enable>false</Enable></Iceo
 
 # Run
 cd unitree_mujoco/simulate/build
-./unitree_mujoco -go2
+./unitree_mujoco -r go2
 ```
 
 即可运行起仿真环境。
