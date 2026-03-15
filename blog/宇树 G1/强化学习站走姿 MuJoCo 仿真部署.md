@@ -101,3 +101,7 @@ And then press [R1 + X] to start controlling the robot.
 ![alt text](<assets/强化学习站走姿 MuJoCo 仿真部署/image-1.png>)
 
 使用左侧摇杆控制其移动。
+
+## 其他环境
+
+Unitree 官方提供了除 IsaacSim / IsaacLab 技术栈以外的一套方案用于进行 MuJoCo 仿真部署，即 Unitree-RL-mjLab。其在 [这篇文章](./机器人动作强化学习%20mjLab%20仿真部署.md) 中有详细描述。
