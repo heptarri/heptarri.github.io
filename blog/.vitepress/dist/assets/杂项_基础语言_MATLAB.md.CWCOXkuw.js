@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.DO8flRo_.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"杂项/基础语言/MATLAB.md","filePath":"杂项/基础语言/MATLAB.md"}'),r={name:"杂项/基础语言/MATLAB.md"};function o(s,c,n,p,_,d){return t(),a("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
