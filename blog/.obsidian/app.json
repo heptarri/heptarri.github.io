@@ -1,0 +1,9 @@
+{
+  "livePreview": true,
+  "strictLineBreaks": true,
+  "attachmentFolderPath": "./assets",
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "showInlineTitle": false
+}
