@@ -1,0 +1,10 @@
+{
+  "livePreview": true,
+  "defaultViewMode": "preview",
+  "strictLineBreaks": true,
+  "newLinkFormat": "relative",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./assets",
+  "useMarkdownLinks": true,
+  "showInlineTitle": false
+}
