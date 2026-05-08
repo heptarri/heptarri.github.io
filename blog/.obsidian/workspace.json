@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ARM Cortex-M/ARM Cortex-M 概述.md",
+                "file": "ARM Cortex-M/Cortex-M 启动文件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ARM Cortex-M 概述"
+              "title": "Cortex-M 启动文件"
             }
           }
         ]
@@ -185,13 +185,13 @@
   },
   "active": "889cd3c82e2468e7",
   "lastOpenFiles": [
-    "ARM Cortex-M/ARM SCT 分散加载文件.md",
-    "ARM Cortex-M/Cortex-M3 启动文件.md",
-    "ARM Cortex-M/ARM Compiler 编译原理.md",
+    "ARM Cortex-M/ARM 链接文件.md",
+    "ARM Cortex-M/Cortex-M 启动文件.md",
     "ARM Cortex-M/ARM Cortex-M 概述.md",
+    "ARM Cortex-M/ARM Compiler 编译原理.md",
+    "ARM Cortex-M/ARM 汇编.md",
     "编译原理/编译原理 概述.md",
     "ARM Cortex-M/ARM 存储器映射和 CMSIS.md",
-    "ARM Cortex-M/ARM Thumb-2 汇编.md",
     "Zephyr RTOS/Zephyr 工作逻辑.md",
     "STM32 系列/STM32 外设说明.md",
     "STM32 系列/Keil RTE 工具.md",

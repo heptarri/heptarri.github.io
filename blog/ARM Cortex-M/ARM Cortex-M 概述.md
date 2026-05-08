@@ -8,6 +8,8 @@
 
 之后，在编译过程中，通过 ARM Compiler，我们对数据进行分段，将代码编译为 ARM Thumb-2 汇编，并根据分散加载文件（`.sct`）决定这些段在 Flash 中的地址和顺序。在链接器作用下，这些段被打包，并将启动文件融合到这些段的开头。之后，镜像文件 `hex` 或 `bin` 被生成。
 
+> 在 GCC 体系中，分散加载文件就是链接脚本 Linker Script，后缀为 `.ld`。`.sct` 文件是在 Keil 中的特殊文件。
+
 在烧录阶段，镜像文件被写入 Flash。
 
 当烧录完成，按下 Reset 复位键时，硬件电路让 CPU 指向 Flash 的起始位置，那里有启动文件用 ARM Thumb-2 设置好的堆栈指针 MSP。在进行一系列处理后，运行到 `__main`。
@@ -16,8 +18,8 @@
 
 但是，对于学习方式来讲，这或许不是最好的顺序。笔者建议按照以下顺序阅读：
 
-1. [Cortex-M3 启动文件](Cortex-M3%20启动文件.md)
-2. [ARM Thumb-2 汇编](ARM%20Thumb-2%20汇编.md)
+1. [Cortex-M 启动文件](Cortex-M%20启动文件.md)
+2. [ARM 汇编](ARM%20汇编.md)
 3. [ARM 存储器映射和 CMSIS](ARM%20存储器映射和%20CMSIS.md)
-4. [ARM SCT 分散加载文件](ARM%20SCT%20分散加载文件.md)
+4. [ARM 链接文件](ARM%20链接文件.md)
 5. [ARM Compiler 编译原理](ARM%20Compiler%20编译原理.md)
