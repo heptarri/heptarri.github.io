@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ARM Cortex-M/ARM 链接文件.md",
+                "file": "ARM Cortex-M/ARM 汇编.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ARM 链接文件"
+              "title": "ARM 汇编"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "42a55f6f6c9fc7b1",
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ARM Cortex-M/ARM 链接文件.md",
+                "file": "ARM Cortex-M/ARM 汇编.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ARM 链接文件"
+              "title": "Outline of ARM 汇编"
             }
           }
         ],
@@ -170,7 +171,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 361.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,9 +189,15 @@
   "lastOpenFiles": [
     "ARM Cortex-M/Cortex-M 启动文件.md",
     "ARM Cortex-M/ARM 链接文件.md",
-    "ARM Cortex-M/ARM Compiler 编译原理.md",
     "ARM Cortex-M/ARM Cortex-M 概述.md",
     "ARM Cortex-M/ARM 汇编.md",
-    "ARM Cortex-M/ARM 存储器映射和 CMSIS.md"
+    "ARM Cortex-M/assets/Pasted image 20260510001650.png",
+    "ARM Cortex-M/assets/Pasted image 20260510001109.png",
+    "ARM Cortex-M/assets/Pasted image 20260510000812.png",
+    "ARM Cortex-M/assets/Pasted image 20260510000603.png",
+    "ARM Cortex-M/assets/Pasted image 20260509232024.png",
+    "ARM Cortex-M/assets",
+    "ARM Cortex-M/ARM 存储器映射和 CMSIS.md",
+    "ARM Cortex-M/ARM Compiler 编译原理.md"
   ]
 }
