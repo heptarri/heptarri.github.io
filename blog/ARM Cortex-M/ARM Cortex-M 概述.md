@@ -6,7 +6,7 @@
 
 > CMSIS （Common Microcontroller Software Interface Standard）是 ARM 公司为芯片厂商提供的通用标准协议，将外设等的地址转化为 C 语言的结构体和指针，统一了中断、系统 Tick 时钟等 API。
 
-之后，在编译过程中，通过 ARM Compiler，我们对数据进行分段，将代码编译为 ARM Thumb-2 汇编，并根据分散加载文件（`.sct`）决定这些段在 Flash 中的地址和顺序。在链接器作用下，这些段被打包，并将启动文件融合到这些段的开头。之后，镜像文件 `hex` 或 `bin` 被生成。
+之后，在编译过程中，通过 ARM Compiler，我们将各个源文件编译为 `.o` 文件，然后链接器（Linker）根据分散加载文件（`.sct`）决定每个源文件的内容在 Flash 的具体位置，并将其合成一个镜像（`.bin` 、`.hex`、`.s19` 等等）。
 
 > 在 GCC 体系中，分散加载文件就是链接脚本 Linker Script，后缀为 `.ld`。`.sct` 文件是在 Keil 中的特殊文件。
 
@@ -19,7 +19,7 @@
 但是，对于学习方式来讲，这或许不是最好的顺序。笔者建议按照以下顺序阅读：
 
 1. [Cortex-M 启动文件](Cortex-M%20启动文件.md)
-2. [ARM 汇编](ARM%20汇编.md)
-3. [ARM 存储器映射和 CMSIS](ARM%20存储器映射和%20CMSIS.md)
-4. [ARM 链接文件](ARM%20链接文件.md)
+2. [ARM 链接文件](ARM%20链接文件.md)
+3. [ARM 汇编](ARM%20汇编.md)
+4. [ARM 存储器映射和 CMSIS](ARM%20存储器映射和%20CMSIS.md)
 5. [ARM Compiler 编译原理](ARM%20Compiler%20编译原理.md)
