@@ -129,10 +129,10 @@ LDM 是数据加载指令，后缀 IA 表示执行完加载操作后，R0 寄存
 
 ```asm
 bl .lc0
-	@ ...
+	; ...
 	
 .lc0:
-	@ ...
+	; ...
 ```
 
 bl 将会直接跳到 .lc0 处。
@@ -155,8 +155,210 @@ ARM 采用 RISC 架构，CPU 本身不能直接读取内存，而需要先将内
 - `LDM` 用于将一块连续的内存单元的数据加载多个寄存器中。
 - `STM` 用于将多个寄存器的数据保存到一块连续的内存单元之中。
 
+具体示例如下：
+
+```asm
+    LDR R0, =num       ; R0 = num 的地址
+    LDR R1, [R0]       ; R1 = *num，读取内存值
+    ADD R1, R1, #5     ; R1 = R1 + 5
+    STR R1, [R0]       ; 将 R1 写回 num
+```
+
 ### 数据处理类指令
 
-该类指令包括数据传送指令 `mov`，算是逻辑运算符 `add`，`sub`，`bic`，`orr`，比较指令 `cmp`，`tst` 等。
+该类指令包括数据传送指令 `mov`，算是逻辑运算符 `add`，`sub`，`bic`，`orr` 等，比较指令 `cmp`，`tst` 等。
+
+```asm
+    MOV R0, #3         ; R0 = 3
+    ADD R1, R0, #5     ; R1 = R0 + 5 = 8
+    SUB R2, R1, #2     ; R2 = R1 - 2 = 6
+    AND R3, R2, #0x0F  ; R3 = R2 & 0x0F = 6
+    ORR R4, R3, #0xF0  ; R4 = R3 | 0xF0 = 0xF6
+    EOR R5, R4, R3     ; R5 = R4 ^ R3 = 0xF0
+    CMP R5, #0xF0      ; 比较 R5 与 0xF0, 设置 N, Z, C, V 标志
+    TST R4, #0x0F      ; 按位与测试 R4 & 0x0F, 设置标志位
+```
+
+若在指令后添加 `S`，表示其按照前文中的描述更改 CPSR 寄存器的值。
+
+### 分支和跳转命令
+
+- `b`：无条件跳转
+- `bl`：调用子程序后返回，保存返回地址到 LR 寄存器。
+- `bx`：跳转到寄存器的指定地址
+- `beq/blt/bgt/...`：分支指令，根据标志位跳转。其根据 CPSR 中的四个位确定是否跳转。具体条换规则如下。条件码为 B 后面的字符。
+
+| 条件码   | 全称                                  | 条件            |
+| ----- | ----------------------------------- | ------------- |
+| EQ    | Equal                               | Z = 1         |
+| NE    | Not Equal                           | Z = 0         |
+| GT    | Greater Than                        | Z = 0 且 N = V |
+| LT    | Less Than                           | N ≠ V         |
+| GE    | Greater or Equal                    | N = V         |
+| LE    | Less or Equal                       | Z = 1 或 N ≠ V |
+| CS/HS | Carry Set / Unsigned Higher or Same | C = 1         |
+| CC/LO | Carry Clear / Unsigned Lower        | C = 0         |
+可能的示例如下：
+
+```asm
+CMP R0, #0
+BEQ zero_label
+B end
+zero_label:
+    MOV R1, #1
+end:
+```
+
+### 伪指令
+
+伪指令是汇编器用来控制汇编过程和程序布局的命令，它们不生成机器码，只是告诉汇编器如何组织代码和数据。
+
+
+#### 段定义指令
+
+用于定义代码段、数据段等：
+
+|指令|功能|示例|
+|---|---|---|
+|`.text`|定义代码段，汇编器把之后的内容视为程序指令|`.text`|
+|`.data`|定义可读写数据段|`.data`|
+|`.bss`|定义未初始化的全局/静态数据|`.bss`|
+|`.rodata`|定义只读数据段（通常用于字符串常量）|`.rodata`|
+
+示例：
+
+```asm
+    .text
+_start:
+    MOV R0, #0      ; 代码段里的指令
+    B end
+
+    .data
+num: .word 10       ; 定义数据段变量 num = 10
+
+    .bss
+buffer: .skip 64    ; 预留 64 字节空间，未初始化
+```
+
+#### 数据定义指令
+
+用于定义变量、数组、常量等：
+
+| 指令                   | 功能              | 示例                    |
+| -------------------- | --------------- | --------------------- |
+| `.word`              | 定义 32 位数据       | `num: .word 10`       |
+| `.byte`              | 定义 8 位数据        | `flag: .byte 0xFF`    |
+| `.half`              | 定义 16 位数据       | `value: .half 0x1234` |
+| `.space` / `.skip`   | 分配未初始化空间        | `.space 16`           |
+| `.ascii`             | 定义不带结束符的字符串     | `.ascii "Hello"`      |
+| `.asciz` / `.string` | 定义以 `\0` 结尾的字符串 | `.asciz "Hello\0"`    |
+
+示例：
+
+```asm
+    .data
+value: .word 100        ; 32位整数
+flag:  .byte 0xFF       ; 8位
+name:  .asciz "ARM"     ; C风格字符串，结尾自动加 '\0'
+array: .space 16        ; 预留16字节空间
+```
+
+#### 符号和全局指令
+
+|指令|功能|示例|
+|---|---|---|
+|`.global`|声明符号为全局，可被其他文件访问|`.global _start`|
+|`.extern`|声明外部符号，由其他文件提供|`.extern printf`|
+|`.equ` / `.set`|定义常量符号|`BUFFER_SIZE .equ 64`|
+
+示例：
+
+```asm
+    .global _start       ; 入口符号可被链接器识别
+BUFFER_SIZE .equ 64      ; 定义常量
+```
+
+#### 汇编控制器指令
+
+|指令|功能|示例|
+|---|---|---|
+|`.align`|对齐地址（通常按 2^n 字节对齐）|`.align 4`|
+|`.org`|设置当前位置计数器（PC）到指定地址|`.org 0x1000`|
+|`.end`|汇编文件结束标记|`.end`|
+示例：
+
+```asm
+    .text
+    .align 4           ; 4字节对齐
+_start:
+    MOV R0, #0
+
+    .org 0x2000        ; 强制下一条数据在 0x2000 地址开始
+data_at_0x2000: .word 0x1234
+```
+
+
+> 在以上的汇编指令之外，还有基于这些基础指令的拓展，比如不同的数据 Load/Store 方式、移位方式等。在此不再赘述。
+
+
+## Hello, ARM
+
+本节通过一个实例介绍 ARM 汇编是如何工作的。
+
+首先，准备好 ARM 64 的编译器，如 `clang`，这是 macOS 中自带的编译器。新建一个文件，名为 `main.S`。
+
+编写以下内容：
+
+```asm
+.text
+    .file   "main.c"
+    .global  main     
+    .p2align    2
+```
+
+`.text` 表示进入代码段，下面的描述为程序指令；`.file` 告诉汇编器/调试器这段汇编来自哪个文件，这里伪装为 `main.c`。他不影响生成的机器码，是给 `gdb` 这样的调试器使用的。`global` 定义了一个符号：`main` 为全局符号。这意味着链接器可以在其他文件中访问 `main`，并且他是程序入口点。对应 C 程序中的 `int main()`。`p2align n` 表示按照 $2^n$ 的方式对齐，这里为对齐 4 字节。
+
+接下来可以书写 `main` 函数的部分：
+
+```asm
+.type   main,@function
+main:                                   // @main
+// %bb.0:
+    sub sp, sp, #32                     // =32
+    stp x29, x30, [sp, #16]             // 16-byte Folded Spill
+    add x29, sp, #16                    // =16
+    mov w8, wzr
+    stur    wzr, [x29, #-4]
+    adrp    x0, .L.str
+    add x0, x0, :lo12:.L.str
+    str w8, [sp, #8]                    // 4-byte Folded Spill
+    bl  printf
+    ldr w8, [sp, #8]                    // 4-byte Folded Reload
+    mov w0, w8
+    ldp x29, x30, [sp, #16]             // 16-byte Folded Reload
+    add sp, sp, #32                     // =32
+    ret
+```
+
+我们利用 `.type` 定义了标签 `main` 为一个函数 `@function`。其主要命令的介绍如下。
+
+| 汇编指令                                           | C 对应          | 作用说明             |
+| ---------------------------------------------- | ------------- | ---------------- |
+| `.type main,@function`                         | `int main()`  | 声明 main 是函数      |
+| `main:`                                        | `int main()`  | 函数入口             |
+| `sub sp, sp, #32`                              | 自动管理栈         | 为局部变量分配 32 字节栈空间 |
+| `stp x29, x30, [sp, #16]`                      | 保存帧指针和返回地址    | 保存调用现场（函数栈帧）     |
+| `add x29, sp, #16`                             | 设置帧指针         | x29 指向当前栈帧基址     |
+| `mov w8, wzr`                                  | `w8 = 0`      | 将 0 存到 w8 寄存器    |
+| `stur wzr, [x29, #-4]`                         | 初始化局部变量       | 栈上的局部变量置零        |
+| `adrp x0, .L.str` + `add x0, x0, :lo12:.L.str` | 获取字符串地址       | printf 参数地址      |
+| `str w8, [sp, #8]`                             | 保存 w8 到栈      | printf 参数传递      |
+| `bl printf`                                    | `printf(...)` | 调用 printf        |
+| `ldr w8, [sp, #8]`                             | 恢复 w8         | printf 后获取返回值或原值 |
+| `mov w0, w8`                                   | 设置返回值寄存器      | main 的返回值放到 w0   |
+| `ldp x29, x30, [sp, #16]`                      | 恢复帧指针和返回地址    | 函数返回前恢复现场        |
+| `add sp, sp, #32`                              | 回收栈空间         | 清理栈帧             |
+| `ret`                                          | `return`      | 返回调用者            |
+
 
 
