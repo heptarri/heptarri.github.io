@@ -23,4 +23,5 @@
 3. [ARM 汇编](ARM%20汇编.md)
 4. [ARM 存储器映射和 CMSIS](ARM%20存储器映射和%20CMSIS.md)
 5. [ARM Compiler 编译原理](ARM%20Compiler%20编译原理.md)
-6. [GCC 交叉编译](GCC%20交叉编译.md)
+6. [Flash 烧录](Flash%20烧录.md)
+7. [GDB 调试](GDB%20调试.md)
