@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ARM Cortex-M/Flash 烧录.md",
+                "file": "ARM Cortex-M/GDB 调试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flash 烧录"
+              "title": "GDB 调试"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ARM Cortex-M/Flash 烧录.md",
+                "file": "ARM Cortex-M/GDB 调试.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Flash 烧录"
+              "title": "Outline of GDB 调试"
             }
           }
         ],
@@ -183,20 +183,22 @@
       "bases:Create new base": false
     }
   },
-  "active": "c49881f515165136",
+  "active": "bfef09092118f8b2",
   "lastOpenFiles": [
-    "ARM Cortex-M/Cortex-M 启动文件.md",
-    "ARM Cortex-M/GCC 交叉编译.md",
-    "STM32 系列/STM32 外设说明.md",
     "ARM Cortex-M/Flash 烧录.md",
-    "ARM Cortex-M/assets/Pasted image 20260511131649.png",
+    "ARM Cortex-M/GCC 交叉编译.md",
     "ARM Cortex-M/GDB 调试.md",
+    "ARM Cortex-M/assets/Pasted image 20260512103507.png",
+    "ARM Cortex-M/assets/Pasted image 20260512103148.png",
     "ARM Cortex-M/ARM 存储器映射和 CMSIS.md",
-    "ARM Cortex-M/assets/Pasted image 20260510182136.png",
-    "ARM Cortex-M/ARM Cortex-M 概述.md",
-    "ARM Cortex-M/ARM Compiler 编译原理.md",
+    "STM32 系列/STM32 外设说明.md",
+    "ARM Cortex-M/Cortex-M 启动文件.md",
     "ARM Cortex-M/ARM 链接文件.md",
     "ARM Cortex-M/ARM 汇编.md",
+    "ARM Cortex-M/ARM Cortex-M 概述.md",
+    "ARM Cortex-M/ARM Compiler 编译原理.md",
+    "ARM Cortex-M/assets/Pasted image 20260511131649.png",
+    "ARM Cortex-M/assets/Pasted image 20260510182136.png",
     "ARM Cortex-M/assets/Pasted image 20260510001650.png",
     "ARM Cortex-M/assets/Pasted image 20260510001109.png",
     "ARM Cortex-M/assets/Pasted image 20260510000812.png",
