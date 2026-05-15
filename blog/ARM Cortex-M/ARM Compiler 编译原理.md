@@ -176,7 +176,7 @@ return x;
 
 #### 其他
 
-在 CFG 之后还具有大量的位于编译器中端的优化，例如PHI、DCE、CSE、Loop Optim 等。在此不再赘述。
+在 CFG 之后还具有大量的位于编译器中端的优化，例如 PHI、DCE、CSE、Loop Optim 等。在此不再赘述。
 
 ### SelectionDAG 
 

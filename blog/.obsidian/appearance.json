@@ -1,4 +1,8 @@
 {
   "accentColor": "#6381b0",
-  "translucency": true
+  "translucency": true,
+  "cssTheme": "Cupertino",
+  "showViewHeader": true,
+  "showRibbon": false,
+  "nativeMenus": true
 }

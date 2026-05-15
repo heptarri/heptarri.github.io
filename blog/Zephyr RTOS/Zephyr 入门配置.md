@@ -1,4 +1,4 @@
-# Zephyr 开发配置
+  # Zephyr 开发配置
 
 本文描述了如何在 Windows 上基于 Zephyr RTOS 进行开发，以开发板 `STMicroelectronics Nucleo-F411RE` 为例，构建一个用于终端输出日志的程序。
 
@@ -59,6 +59,9 @@ west sdk install
 > 如果命令行下载太慢，可以手动下载 [Zephyr SDK 0.17.4](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.17.4) 后运行 `setup.cmd` 配置。
 
 到此，我们的 Zephyr 环境全部配置完成。
+
+
+> 下文中的内容在 [Zephyr  项目配置和调试](Zephyr%20实战/Zephyr%20%20项目配置和调试.md) 中有更加详细的描述。
 
 ## 新建项目
 

@@ -5,5 +5,7 @@
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true,
+  "autoConvertHtml": false
 }

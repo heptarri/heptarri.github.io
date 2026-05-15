@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f6061d9667e19125",
+        "id": "542bb1dc11c584ac",
         "type": "tabs",
         "children": [
           {
-            "id": "bfef09092118f8b2",
+            "id": "55d97cb52d8c437f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ARM Cortex-M/ARM Cortex-M 概述.md",
+                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 自定义 BSP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ARM Cortex-M 概述"
+              "title": "Zephyr 自定义 BSP"
             }
           }
         ]
@@ -61,7 +61,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "搜索"
+              "title": "Search"
             }
           },
           {
@@ -71,14 +71,14 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "书签"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 349.5
   },
   "right": {
     "id": "42a55f6f6c9fc7b1",
@@ -133,7 +133,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "标签"
+              "title": "Tags"
             }
           },
           {
@@ -147,7 +147,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "添加笔记属性"
+              "title": "All properties"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ARM Cortex-M/ARM Cortex-M 概述.md",
-                "followCursor": false,
+                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 自定义 BSP.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ARM Cortex-M 概述"
+              "title": "Outline of Zephyr 自定义 BSP"
             }
           }
         ],
@@ -170,7 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,27 +183,49 @@
       "bases:Create new base": false
     }
   },
-  "active": "bfef09092118f8b2",
+  "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
+    "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 自定义 BSP.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr  项目配置和调试.md",
+    "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515224814.png",
+    "Zephyr RTOS/Zephyr 入门配置.md",
+    "Zephyr RTOS/Zephyr 工作逻辑.md",
+    "Zephyr RTOS/Zephyr IDE 工具.md",
+    "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515223647.png",
+    "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515222603.png",
+    "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515222436.png",
+    "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515222403.png",
+    "Zephyr RTOS/Zephyr 实战/assets",
+    "Zephyr RTOS/Zephyr 实战",
+    "Zephyr RTOS/项目结构.md",
+    "Zephyr RTOS/Zephyr RTOS 核心/线程 Thread.md",
     "ARM Cortex-M/Flash 烧录.md",
+    "about.md",
+    "base.md",
+    "index.md",
+    "2026-05-12.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "ARM Cortex-M/Cortex-M 启动文件.md",
     "ARM Cortex-M/GDB 调试.md",
+    "ARM Cortex-M/ARM 链接文件.md",
+    "ARM Cortex-M/ARM 汇编.md",
     "ARM Cortex-M/ARM 存储器映射和 CMSIS.md",
     "ARM Cortex-M/ARM Cortex-M 概述.md",
     "ARM Cortex-M/ARM Compiler 编译原理.md",
-    "ARM Cortex-M/ARM 汇编.md",
-    "ARM Cortex-M/GCC 交叉编译.md",
+    "STM32 系列/ADC 外设 HAL 库配置与编程.md",
+    "强化学习/MuJoCo 和连续控制.md",
+    "强化学习/PPO 训练.md",
+    "强化学习/PPO 和策略梯度.md",
+    "强化学习/Q-Learning 与 DQN.md",
+    "强化学习/Gymnasium 详解.md",
+    "强化学习",
     "ARM Cortex-M/assets/Pasted image 20260512103507.png",
     "ARM Cortex-M/assets/Pasted image 20260512103148.png",
-    "STM32 系列/STM32 外设说明.md",
-    "ARM Cortex-M/Cortex-M 启动文件.md",
-    "ARM Cortex-M/ARM 链接文件.md",
     "ARM Cortex-M/assets/Pasted image 20260511131649.png",
     "ARM Cortex-M/assets/Pasted image 20260510182136.png",
     "ARM Cortex-M/assets/Pasted image 20260510001650.png",
-    "ARM Cortex-M/assets/Pasted image 20260510001109.png",
-    "ARM Cortex-M/assets/Pasted image 20260510000812.png",
-    "ARM Cortex-M/assets/Pasted image 20260510000603.png",
-    "ARM Cortex-M/assets/Pasted image 20260509232024.png",
     "ARM Cortex-M/assets"
   ]
 }
