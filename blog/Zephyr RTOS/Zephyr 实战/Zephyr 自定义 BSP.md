@@ -247,3 +247,7 @@ int main() {
 ```
 
 可以观察到，LED 成功亮起，受按钮控制。
+
+## 资源
+
+本文项目链接：[GitHub - heptarri](https://github.com/heptarri/zephyr_prj_tmpl)

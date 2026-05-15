@@ -177,3 +177,8 @@ ARM Cortex 提供了 VS Code 插件用于进行硬件调试。
 ![](assets/Pasted%20image%2020260516000926.png)
 
 可以看到其包含了更加全面的功能，包括寄存器查看、Live Watch、软件复位等。
+
+
+## 资源
+
+本文项目链接：[GitHub - heptarri](https://github.com/heptarri/zephyr_prj_tmpl)
