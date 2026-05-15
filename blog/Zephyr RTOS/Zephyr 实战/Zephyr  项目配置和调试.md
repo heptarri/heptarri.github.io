@@ -131,7 +131,7 @@ west build -t debugserver_qemu
 
 > 如果遇到断点和行号对不上的情况，检查编译优化问题。在 `prj.conf` 文件中添加：`CONFIG_DEBUG_OPTIMIZATIONS=y`。
 
-## 硬件调试
+## GDB 硬件调试
 
 除了利用 QEMU 进行软件模拟调试外，当然可以进行硬件调试。在 `CMakeLists.txt` 中将 `BOARD` 变量改为 `nucleo_f411re` 后，删除 `build`  目录并重新编译，在 `launch.json` 中将 Debug Server 改为 `localhost:3333`。运行以下命令：
 
@@ -144,3 +144,36 @@ west debugserver
 ![](assets/Pasted%20image%2020260515224814.png)
 
 可以看到 Nucleo F411RE 开发板的串口中输出了 `Hello, world!`。这是设备树文件决定的。
+
+## 利用 Cortex-Debug 调试
+
+ARM Cortex 提供了 VS Code 插件用于进行硬件调试。
+
+首先，在 VS Code 左栏 Extension 中搜索 Cortex Debug，安装。
+
+![](assets/Pasted%20image%2020260516000516.png)
+
+安装后在 `launch.json` 中写一个 `configuration`：
+
+```json
+{
+	"cwd": "${workspaceRoot}",
+	"executable": "${workspaceFolder}/build/zephyr/zephyr.elf",
+	"name": "Debug with OpenOCD",
+    "request": "launch",
+    "type": "cortex-debug",
+    "servertype": "external",
+    "runToEntryPoint": "main",
+    "showDevDebugOutput": "none",
+    "svdFile": "/Users/hepmac/Workspace/cmsis_svd_stm32/stm32f4/stm32f411.svd",
+    "gdbTarget": "localhost:3333"
+},
+```
+
+其中，`svdFile` 字段为使用的芯片的 `SVD` 文件路径。这个文件中定义了外设寄存器的相关映射等硬件信息。
+
+终端运行 `west debugserver`，在 VS Code 左侧选择配置，开始调试：
+
+![](assets/Pasted%20image%2020260516000926.png)
+
+可以看到其包含了更加全面的功能，包括寄存器查看、Live Watch、软件复位等。
