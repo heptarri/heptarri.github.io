@@ -176,8 +176,9 @@ ARM Cortex 提供了 VS Code 插件用于进行硬件调试。
 
 ![](assets/Pasted%20image%2020260516000926.png)
 
-可以看到其包含了更加全面的功能，包括寄存器查看、Live Watch、软件复位等。
+可以看到其包含了更加全面的功能，包括寄存器查看、Live Watch、软件复位等。在底栏 XRTOS 页还可以查看当前线程的信息。
 
+![](assets/Pasted%20image%2020260516113822.png)
 
 ## 资源
 
