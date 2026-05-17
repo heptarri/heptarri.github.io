@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
+                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "编写设备树文件"
+              "title": "SPI"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
+                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 编写设备树文件"
+              "title": "Outline of SPI"
             }
           }
         ],
@@ -185,13 +185,20 @@
   },
   "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/PWM.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/I2C.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/GPIO.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/ADC.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/UART.md",
+    "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260517005022.png",
     "Zephyr RTOS/Zephyr 实战/Zephyr 自定义 BSP.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr  项目配置和调试.md",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260516113822.png",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260516000926.png",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260516000516.png",
-    "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515224814.png",
     "Zephyr RTOS/Zephyr 入门配置.md",
     "Zephyr RTOS/Zephyr 工作逻辑.md",
@@ -218,14 +225,8 @@
     "ARM Cortex-M/ARM 存储器映射和 CMSIS.md",
     "ARM Cortex-M/ARM Cortex-M 概述.md",
     "ARM Cortex-M/ARM Compiler 编译原理.md",
-    "STM32 系列/ADC 外设 HAL 库配置与编程.md",
-    "强化学习/MuJoCo 和连续控制.md",
-    "强化学习/PPO 训练.md",
-    "强化学习/PPO 和策略梯度.md",
-    "强化学习/Q-Learning 与 DQN.md",
     "强化学习",
     "ARM Cortex-M/assets/Pasted image 20260512103507.png",
-    "ARM Cortex-M/assets/Pasted image 20260512103148.png",
     "ARM Cortex-M/assets"
   ]
 }
