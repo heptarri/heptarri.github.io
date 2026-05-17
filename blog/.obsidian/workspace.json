@@ -185,10 +185,10 @@
   },
   "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
-    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/PWM.md",
-    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/I2C.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/GPIO.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/ADC.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/I2C.md",
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/PWM.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/UART.md",
     "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
