@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
+                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/UART.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SPI"
+              "title": "UART"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
+                "file": "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/UART.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SPI"
+              "title": "Outline of UART"
             }
           }
         ],
@@ -185,11 +185,11 @@
   },
   "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
+    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/GPIO.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/ADC.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/I2C.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/PWM.md",
-    "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/SPI.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考/UART.md",
     "Zephyr RTOS/Zephyr 实战/编写设备树文件.md",
     "Zephyr RTOS/Zephyr 实战/Zephyr 外设配置参考",
