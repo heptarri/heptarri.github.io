@@ -40,8 +40,7 @@ void user_spi_entry() {
 
   struct spi_config spi_cfg = {
       .frequency = 256000U,
-      .operation = SPI_WORD_SET(8) | SPI_OP_MODE_MASTER | SPI_TRANSFER_MSB,
-      .slave = 0,
+      .operation = SPI_WORD_SET(8),
   };
 
   int ret;
@@ -64,8 +63,7 @@ void user_spi_entry() {
     };
 
     ret = spi_write(spi, &spi_cfg, &tx);
-
-    printk("ret=%d\n", ret);
+    printk("Spi message sent successfully. return value: %d.\n", ret);
 
     k_msleep(500);
   }
