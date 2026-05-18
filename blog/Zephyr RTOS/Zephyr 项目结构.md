@@ -1,4 +1,4 @@
-# 项目结构
+# Zephyr 项目结构
 
 zephyr主要有两部分组成： Zephyrproject 目录和 Zephyr SDK 目录。
 

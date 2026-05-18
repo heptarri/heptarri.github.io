@@ -1,4 +1,4 @@
-  # Zephyr 开发配置
+# Zephyr 开发配置
 
 本文描述了如何在 Windows 上基于 Zephyr RTOS 进行开发，以开发板 `STMicroelectronics Nucleo-F411RE` 为例，构建一个用于终端输出日志的程序。
 

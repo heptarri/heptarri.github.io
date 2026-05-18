@@ -190,7 +190,7 @@ $_TARGETNAME configure -event gdb-detach {
 };
 ```
 
-具体的解析详见 [编写设备树文件](编写设备树文件.md)。
+具体的解析详见 [Zephyr 编写设备树文件](Zephyr%20编写设备树文件.md)。
 
 ## 引用 BSP
 
