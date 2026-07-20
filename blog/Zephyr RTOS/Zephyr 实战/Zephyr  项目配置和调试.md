@@ -145,6 +145,28 @@ west debugserver
 
 可以看到 Nucleo F411RE 开发板的串口中输出了 `Hello, world!`。这是设备树文件决定的。
 
+## LLDB 调试
+
+可以利用 Clangd + LLDB 工具链达到更好的体验，前置文章：[VS Code 使用 Clangd](../../杂项/VS%20Code%20使用%20Clangd.md)。
+
+`launch.json` 配置如下：
+
+```json
+	{
+      "type": "lldb",
+      "request": "launch",
+      "name": "LLDB Launch",
+      "targetCreateCommands": [
+        "target create ${workspaceFolder}/build/zephyr/zephyr.elf"
+      ],
+      "processCreateCommands": [
+        "gdb-remote localhost:1234"
+      ]
+    }
+```
+
+之后按下 `F5` 进行调试。
+
 ## 利用 Cortex-Debug 调试
 
 ARM Cortex 提供了 VS Code 插件用于进行硬件调试。

@@ -65,3 +65,14 @@ void user_pwm_entry() {
 
 K_THREAD_DEFINE(tid_pwm, 1024, user_pwm_entry, NULL, NULL, NULL, 7, 0, 0);
 ```
+
+## 备注
+
+需要注意的是，由于 `nucleo_f411re` 官方开发板会默认开启 SPI1，占用 PA5 引脚，所以需要在设备树文件中关闭：
+
+```dts
+&spi1 {
+	status = "disabled";
+};
+```
+

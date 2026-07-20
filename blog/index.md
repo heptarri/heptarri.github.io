@@ -21,12 +21,14 @@ hero:
       link: https://github.com/heptarri
 
 features:
-  - title: 嵌入式开发
-    details: 记录了嵌入式软、硬件开发过程中的理论总结、经验分享和踩坑指南。
-  - title: 算法理论
-    details: 描述了在汽车电子、机器人控制及感知、深度学习、编程语言理论学习过程中的笔记和备忘。
-  - title: 基础软件工具
-    details: 一些技巧和实用指南，用于熟悉基础软件和行业通用工具等。
+  - title: 机器人系统
+    details: 记录人形机器人、机械臂等机器人系统开发实践，涵盖 ROS2、机器人建模、运动控制、运动重定向、强化学习、VLA 及机器人智能操作等技术。
+  - title: 嵌入式与底层开发
+    details: 记录 MCU、RTOS、嵌入式 Linux 及 C/C++ 系统开发相关技术，涵盖硬件接口、通信协议、驱动开发、系统架构与软硬件协同等工程实践。
+  - title: 智能驾驶与运动控制
+    details: 记录无人驾驶与移动机器人相关技术，涵盖多传感器融合、SLAM、视觉感知、路径规划及 PID、LQR、MPC 等运动控制算法。
+  - title: 工程工具与开发实践
+    details: 分享 C/C++、Python、Linux、Git、CMake、MATLAB/Simulink 等开发工具与工程实践，以及项目开发中的问题分析与解决方案。
 ---
 
 ## 快速开始
