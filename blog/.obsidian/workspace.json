@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "现代 C++/RAII 与资源管理.md",
+                "file": "现代 C++/移动语义.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RAII 与资源管理"
+              "title": "移动语义"
             }
           }
         ]
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "现代 C++/RAII 与资源管理.md",
+                "file": "现代 C++/移动语义.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,10 +187,15 @@
   },
   "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
-    "现代 C++/智能指针.md",
-    "现代 C++/RAII 与资源管理.md",
-    "现代 C++/现代 C++ 系列导言.md",
+    "现代 C++/类型安全.md",
     "现代 C++/移动语义.md",
+    "现代 C++/多线程与任务编排.md",
+    "现代 C++/函数式思想.md",
+    "STM32 系列/Keil RTE 工具.md",
+    "内存与 C/进程内存布局.md",
+    "现代 C++/RAII 与资源管理.md",
+    "现代 C++/智能指针.md",
+    "现代 C++/现代 C++ 系列导言.md",
     "现代 C++/assets/Pasted image 20260818160231.png",
     "现代 C++/assets",
     "宇树 G1/利用 MuJoCo 仿真 ROS 控制.md",
@@ -203,7 +208,6 @@
     "内存与 C/内存安全防护.md",
     "内存与 C/栈帧与堆分配.md",
     "内存与 C/C 类型系统.md",
-    "内存与 C/进程内存布局.md",
     "内存与 C/计算机存储体系.md",
     "内存与 C/C 指针语义.md",
     "内存与 C/变量作用域、存储期与生命周期.md",
@@ -212,9 +216,6 @@
     "内存与 C/虚拟内存.md",
     "内存与 C/存储的层次.md",
     "内存与 C/计算机硬件存储.md",
-    "现代 C++/模板与编译期编程.md",
-    "现代 C++/协程.md",
-    "现代 C++/多线程与任务编排.md",
     "内存与 C",
     "现代 C++",
     "Zephyr RTOS/Zephyr 实战/Zephyr RTOS 核心功能参考",
