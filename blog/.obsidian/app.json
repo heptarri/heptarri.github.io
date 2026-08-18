@@ -1,11 +1,8 @@
 {
-  "livePreview": true,
-  "strictLineBreaks": true,
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
   "attachmentFolderPath": "./assets",
   "newLinkFormat": "relative",
-  "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
-  "showInlineTitle": false,
-  "showUnsupportedFiles": true,
-  "autoConvertHtml": false
+  "showUnsupportedFiles": true
 }
