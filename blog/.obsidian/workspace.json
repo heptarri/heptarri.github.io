@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "现代 C++/智能指针.md",
+                "file": "现代 C++/错误处理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "智能指针"
+              "title": "错误处理"
             }
           }
         ]
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "现代 C++/智能指针.md",
+                "file": "现代 C++/错误处理.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,6 +187,7 @@
   },
   "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
+    "现代 C++/智能指针.md",
     "现代 C++/移动语义.md",
     "现代 C++/现代 C++ 系列导言.md",
     "现代 C++/类型安全.md",
@@ -195,7 +196,6 @@
     "STM32 系列/Keil RTE 工具.md",
     "内存与 C/进程内存布局.md",
     "现代 C++/RAII 与资源管理.md",
-    "现代 C++/智能指针.md",
     "现代 C++/assets/Pasted image 20260818160231.png",
     "现代 C++/assets",
     "宇树 G1/利用 MuJoCo 仿真 ROS 控制.md",
