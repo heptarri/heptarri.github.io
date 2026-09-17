@@ -1,8 +1,9 @@
 {
-  "alwaysUpdateLinks": true,
   "showInlineTitle": false,
+  "strictLineBreaks": true,
   "attachmentFolderPath": "./assets",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }

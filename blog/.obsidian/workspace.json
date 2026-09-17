@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "现代 C++/类型安全.md",
+                "file": "现代 C++/多线程与任务编排.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "类型安全"
+              "title": "多线程与任务编排"
             }
           }
         ]
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "现代 C++/类型安全.md",
+                "file": "现代 C++/多线程与任务编排.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,11 +187,15 @@
   },
   "active": "55d97cb52d8c437f",
   "lastOpenFiles": [
-    "现代 C++/函数式思想.md",
+    "现代 C++/原子操作与内存序.md",
+    "现代 C++/模板与编译期编程.md",
+    "现代 C++/assets/Pasted image 20260917215320.png",
+    "现代 C++/assets/Pasted image 20260818160231.png",
     "现代 C++/多线程与任务编排.md",
     "现代 C++/现代 C++ 系列导言.md",
     "现代 C++/类型安全.md",
     "现代 C++/RAII 与资源管理.md",
+    "现代 C++/函数式思想.md",
     "现代 C++/智能指针.md",
     "现代 C++/错误处理.md",
     "现代 C++/移动语义.md",
@@ -206,20 +210,16 @@
     "内存与 C/内存与 C 导论.md",
     "内存与 C/计算机存储体系.md",
     "内存与 C/并发内存模型与缓存一致性.md",
-    "现代 C++/原子操作与内存序.md",
     "现代 C++/协程.md",
-    "现代 C++/模板与编译期编程.md",
     "STM32 系列/STM32 Cube AI Studio 教程.md",
     "STM32 系列/STM32 外设说明.md",
     "STM32 系列/Keil RTE 工具.md",
-    "STM32 系列/ADC 外设 HAL 库配置与编程.md",
     "LeRobot 源码解读/功能模块解释/处理器",
     "LeRobot 源码解读/功能模块解释/策略解释",
     "LeRobot 源码解读/功能模块解释",
     "LeRobot 源码解读",
     "Pasted image 20260818154148.png",
     "强化学习/前沿篇",
-    "现代 C++/assets/Pasted image 20260818160231.png",
     "现代 C++/assets",
     "内存与 C",
     "现代 C++",
@@ -232,7 +232,6 @@
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260516000516.png",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515223647.png",
     "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515222603.png",
-    "Zephyr RTOS/Zephyr 实战/assets/Pasted image 20260515222436.png",
     "Untitled.canvas"
   ]
 }
